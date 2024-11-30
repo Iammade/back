@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flask-backend
+    env: python
+    region: oregon  # Choose the region closest to your users
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: NVIDIA_API_KEY
+        value: "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"
