@@ -1,0 +1,5 @@
+flask
+flask-cors
+PyMuPDF
+langchain-nvidia-ai-endpoints
+gunicorn
